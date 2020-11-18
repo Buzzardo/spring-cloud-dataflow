@@ -292,12 +292,12 @@ image::{dataflow-asciidoc}/images/dataflow-task-definitions-list.png[List of Tas
 
 ==== Create a Task Definition
 
-The following image shows a task definition comprised of the timestamp application as well as the list of task applications that can be used to create a task definiton:
+The following image shows a task definition composed of the timestamp application as well as the list of task applications that can be used to create a task definiton:
 
 image::{dataflow-asciidoc}/images/dataflow-task-definition-create.png[List of Task Applications, scaledwidth="100%"]
 
-On this page you can also specify various properties that are used during the deployment of the application.
-Once you are satisfied with the task definition you can click the "CREATE TASK" button.  A dialog box will appear requesting a task definition name and description.  At a minimum, you must provide a name for the new definition.
+On this page, you can also specify various properties that are used during the deployment of the application.
+Once you are satisfied with the task definition, you can click the *CREATE TASK* button.  A dialog box then asks for a task definition name and description. At a minimum, you must provide a name for the new definition.
 
 
 ==== Creating Composed Task Definitions
@@ -331,14 +331,15 @@ image::{dataflow-asciidoc}/images/dataflow-task-launch.png[Task Launch, scaledwi
 
 
 ==== Import/Export Tasks
-The *Import/Export* page  provides the option to import and export tasks.  This is done by clicking the *Import/Export* option on the left side of page.  From here click the *Export task(s): Create a JSON file with the selected tasks* option, this will show the `Export Tasks(s)` page.
+
+The *Import/Export* page  provides the option to import and export tasks.  This is done by clicking the *Import/Export* option on the left side of page.  From here, click the *Export task(s): Create a JSON file with the selected tasks* option. The `Export Tasks(s)` page appears.
 
 The following image shows the tasks export page:
 
 .Tasks Utils Export page
 image::{dataflow-asciidoc}/images/dataflow-tasks-utils-export.png[Tasks Utils Export, scaledwidth="100%"]
 
-Similarly you can import task definitions.  This is done by clicking the *Import/Export* option on the left side of page.  From here click the *Import task(s): Import tasks from a JSON file* option, this will show the `Import Task(s)` page.  On the Import Tasks page, you have to import from a valid JSON file. You can either manually draft the file or export the file from the Tasks Export page.
+Similarly, you can import task definitions. To do so, click the *Import/Export* option on the left side of page. From here, click the *Import task(s): Import tasks from a JSON file* option to show the *Import Tasks* page.  On the *Import Tasks* page, you have to import from a valid JSON file. You can either manually draft the file or export the file from the *Tasks Export* page.
 
 .Tasks Utils Import page
 image::{dataflow-asciidoc}/images/dataflow-tasks-utils-import.png[Tasks Utils Import, scaledwidth="100%"]
@@ -355,7 +356,7 @@ image::{dataflow-asciidoc}/images/dataflow-tasks-utils-import-result.png[Tasks U
 
 The *Task Executions* tab shows the current running and completed task executions. From this page, you can drill down into the *Task Execution* details page. Furthermore, you can relaunch a *Task Execution* or stop a running execution.
 
-Lastly, you can clean up one or more task executions. This operation removes any associated task or batch job from the underlying persistence store. This operation can only be triggered for _parent_ task executions and cascades down to the child task executions (if there are any).
+Finally, you can clean up one or more task executions. This operation removes any associated task or batch job from the underlying persistence store. This operation can only be triggered for _parent_ task executions and cascades down to the child task executions (if there are any).
 
 The following image shows the *Executions* tab:
 
@@ -365,7 +366,7 @@ image::{dataflow-asciidoc}/images/dataflow-task-executions-list.png[List of Task
 [[dashboard-tasks-execution-detail]]
 === Execution Detail
 
-For each task execution on the *Task executions* tab, you can retrieve detailed information about a specific execution by clicking the `Execution ID` of the task execution.
+For each task execution on the *Task Executions* tab, you can retrieve detailed information about a specific execution by clicking the *Execution ID* of the task execution.
 
 image::{dataflow-asciidoc}/images/dataflow-task-execution-detail.png[List of Task Executions, scaledwidth="100%"]
 
@@ -397,7 +398,7 @@ NOTE: Child Spring Cloud Task applications launched via Spring Batch application
 [[dashboard-jobs]]
 == Jobs
 
-The *Job executions* tab of the Dashboard lets you inspect batch jobs.
+The *Job Executions* tab of the Dashboard lets you inspect batch jobs.
 The main section of the screen provides a list of job executions.
 Batch jobs are tasks that each execute one or more batch jobs.
 Each job execution has a reference to the task execution ID (in the Task ID column).
@@ -458,7 +459,7 @@ When that happens, check the server log files for further details.
 [[dashboard-job-executions-steps-progress]]
 === Step Execution History
 
-Under the Step Execution History, you can also view various metrics associated with the selected step, such as duration, read counts, write counts, and others.
+Under *Step Execution History*, you can also view various metrics associated with the selected step, such as duration, read counts, write counts, and others.
 
 endif::omit-tasks-docs[]
 
